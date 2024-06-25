@@ -1,0 +1,44 @@
+.exams{
+    background-color: var(--bg-color);
+
+    div{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 95px;
+    }
+}
+
+.exam__card{
+    background-color: var(--bg-color-light);
+    border-radius: 20px;
+    box-shadow: 5px 5px 16px rgba(1, 14, 20, 0.2);
+
+    padding: 25px;
+    max-width: 240px;
+    width: 100%;
+    margin-left: 22px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &:first-child{
+        margin-left: 0;
+    }
+
+}
+
+.card{
+    &__title{
+        font-size: 1.25rem;
+        margin: 23px 0;
+    }
+
+    &__text{
+        font-size: 1.25rem;
+        span{
+            font-size: 1.5rem;
+        }
+
+    }
+}

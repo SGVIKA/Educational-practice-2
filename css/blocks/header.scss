@@ -1,0 +1,59 @@
+.header {
+  background-image: url(/assets/img/header_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__preview {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo {
+    max-height: 150px;
+  }
+
+  &__title {
+    font-family: "Roboto Bold";
+    font-size: 4.875rem;
+    max-width: 600px;
+    line-height: 66px;
+    color: var(--text-color-light);
+
+    margin: 0;
+    margin-left: 50px;
+  }
+}
+
+.menu {
+  @include list-reset;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__point {
+    margin-top: 150px;
+
+    max-width: 187px;
+    text-align: center;
+    padding: 15px;
+
+    border-left: 2px solid var(--text-color-light);
+
+    a {
+      font-family: "Roboto Regular";
+      font-size: 1rem;
+      line-height: 20px;
+      color: var(--text-color-light);
+      text-transform: uppercase;
+    }
+
+    &:first-child {
+      border: none;
+    }
+  }
+}

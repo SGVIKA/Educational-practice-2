@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Roboto Light';
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header, section, footer{
+  padding: 95px 76px;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title{
+  &__light{
+    font-family: 'Roboto Bold';
+    font-size: 3rem;
+    color: var(--text-color-light);
+    text-align: center;
+    text-transform: uppercase;
+
+    margin: 0;
+  }
+
+  &__dark{
+    font-family: 'Roboto Bold';
+    font-size: 3rem;
+    color: var(--bg-color-dark);
+    text-align: center;
+    text-transform: uppercase;
+
+    margin: 0;
+  }
+}
+
+.card__title{
+  font-family: 'Roboto Medium';
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
