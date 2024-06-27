@@ -1,0 +1,18 @@
+.last-scores{
+    background-color: var(--bg-color-light);
+    align-items: center;
+    &__table{
+        margin-top: 95px;
+        max-width: 1000px;
+        width: 100%;
+
+        background-color: var(--bg-color);
+
+        @media(max-width: 480px){
+            margin-top: 50px;
+        }
+        tr:nth-child(odd):not(:first-child) {
+            background-color: var(--table-bg-color);
+          }
+    }
+}

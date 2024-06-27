@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="icon" href="/assets/img/logo.svg" type="image/x-icon">
+
+
 </head>
 
 <body>
@@ -17,6 +19,39 @@
             <img class="header__logo" src="/assets/img/logo.svg" alt="лого" width="147" height="143">
             <h1 class="header__title">СТУПИНСКИЙ ФИЛИАЛ МАИ</h1>
         </div>
+
+        <div class="mobile">
+            <button class="button" aria-expanded="false" aria-controls="list">
+                <div class="btn__hamb">
+                    <div></div>
+                </div>
+            </button>
+
+            <ul class="mobile__menu" id="list" aria-hidden="true">
+                <li class="menu-item">
+                    <a href="#" class="menu-link" tabindex="-1">Порядок поступления</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link" tabindex="-1">Минимальные баллы</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link" tabindex="-1">Проходные баллы 2023</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link" tabindex="-1">Пакет документов</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link" tabindex="-1">Направления подготовки</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link" tabindex="-1">Контакты</a>
+                </li>
+                <li class="menu-item">
+                    <a href="https://sfmai.ru/" class="menu-link" tabindex="-1">Подробнее</a>
+                </li>
+            </ul>
+        </div>
+
         <nav class="header__menu menu">
             <li class="menu__point"><a href="#">Порядок поступления</a></li>
             <li class="menu__point"><a href="#">Минимальные баллы</a></li>
@@ -132,28 +167,28 @@
 
         <section class="last-scores">
             <h2 class="section-title__dark">Проходные баллы 2023</h2>
-            <table>
-                <tr>
+            <table class="last-scores__table">
+                <tr class="table__head">
                     <th>Направление подготовки</th>
                     <th>Проходной балл</th>
                 </tr>
-                <tr>
+                <tr class="table__row">
                     <td>09.03.01 "Информатика и вычислительная техника"</td>
                     <td>214</td>
                 </tr>
-                <tr>
+                <tr class="table__row">
                     <td>15.03.04 "Автоматизация технологических процессов и производств"</td>
                     <td>203</td>
                 </tr>
-                <tr>
+                <tr class="table__row">
                     <td>22.03.01 "Материаловедение и технологии материалов"</td>
                     <td>177</td>
                 </tr>
-                <tr>
+                <tr class="table__row">
                     <td>24.03.05 "Двигатели летательных аппаратов"</td>
                     <td>168</td>
                 </tr>
-                <tr>
+                <tr class="table__row">
                     <td>38.03.02 "Менеджмент"</td>
                     <td>162</td>
                 </tr>
@@ -163,37 +198,39 @@
 
         <section class="documents">
             <h2 class="section-title__dark">Пакет документов</h2>
-            <ul>
-                <li>заявление и согласие на обработку персональных данных</li>
-                <li>паспорт (документ, удостоверяющий личность и гражданство)</li>
-                <li>копия паспорта</li>
-                <li>СНИЛС</li>
-                <li>аттестат или диплом (оригинал или ксерокопию документа об образовании)</li>
-                <li>шесть фотографий 3x4 см (черно-белые или цветные)</li>
-                <li>если есть: документы, подтверждающие наличие особых прав, индивидуальных достижений, победы в
+            <ul class="documents__list">
+                <li><span class="marker"></span>заявление и согласие на обработку персональных данных</li>
+                <li><span class="marker"></span>паспорт (документ, удостоверяющий личность и гражданство)</li>
+                <li><span class="marker"></span>копия паспорта</li>
+                <li><span class="marker"></span>СНИЛС</li>
+                <li><span class="marker"></span>аттестат или диплом (оригинал или ксерокопию документа об образовании)
+                </li>
+                <li><span class="marker"></span>шесть фотографий 3x4 см (черно-белые или цветные)</li>
+                <li><span class="marker"></span>если есть: документы, подтверждающие наличие особых прав, индивидуальных
+                    достижений, победы в
                     олимпиадах или другие документы, влияющие на порядок поступления</li>
-                <li>иные документы на ваше усмотрение</li>
+                <li><span class="marker"></span>иные документы на ваше усмотрение</li>
             </ul>
         </section>
 
         <section class="directions">
             <h2 class="section-title__light">Направления подготовки</h2>
-            <div>
-                <article>
-                    <h3>Информатика и вычислительная техника</h3>
+            <div class="directions__cards">
+                <article class="directions__card">
+                    <h3 class="card__title">Информатика и вычислительная техника</h3>
                     <p>09.03.01</p>
-                    <div>
+                    <div class="directions__inf">
                         <div>
-                            <p>кафедра: МСиИТ</p>
-                            <p>квалификация: Бакалавр техники и технологии</p>
-                            <p>Количество мест:</p>
+                            <p><span class="bold-text">кафедра:</span> МСиИТ</p>
+                            <p><span class="bold-text">квалификация:</span> Бакалавр техники и технологии</p>
+                            <p class="bold-text">Количество мест:</p>
                             <ul>
                                 <li>бюджетных - 15 мест</li>
                                 <li>платных - 35 мест</li>
                             </ul>
                         </div>
                         <div>
-                            <p>Какие предметы сдавать:</p>
+                            <p class="bold-text">Какие предметы сдавать:</p>
                             <ul>
                                 <li>Математика</li>
                                 <li>Физика или Информатика и ИКТ</li>
@@ -220,20 +257,20 @@
                     </table>
                 </article>
 
-                <article>
-                    <h3>Автоматизация технологических процессов и производств</h3>
+                <article class="directions__card">
+                    <h3 class="card__title">Автоматизация технологических процессов и производств</h3>
                     <p>15.03.04</p>
-                    <div>
+                    <div class="directions__inf">
                         <div>
-                            <p>кафедра: ТАОМ</p>
-                            <p>квалификация: Бакалавр техники и технологии</p>
-                            <p>Количество мест:</p>
+                            <p><span class="bold-text">кафедра:</span> ТАОМ</p>
+                            <p><span class="bold-text">квалификация:</span> Бакалавр техники и технологии</p>
+                            <p class="bold-text">Количество мест:</p>
                             <ul>
                                 <li>платных - 15 мест</li>
                             </ul>
                         </div>
                         <div>
-                            <p>Какие предметы сдавать:</p>
+                            <p class="bold-text">Какие предметы сдавать:</p>
                             <ul>
                                 <li>Математика</li>
                                 <li>Физика или Информатика и ИКТ</li>
@@ -255,21 +292,21 @@
                     </table>
                 </article>
 
-                <article>
-                    <h3>Материаловедение и технологии материалов</h3>
+                <article class="directions__card">
+                    <h3 class="card__title">Материаловедение и технологии материалов</h3>
                     <p>22.03.01</p>
-                    <div>
+                    <div class="directions__inf">
                         <div>
-                            <p>кафедра: ТАОМ</p>
-                            <p>квалификация: Бакалавр техники и технологии</p>
-                            <p>Количество мест:</p>
+                            <p><span class="bold-text">кафедра:</span> ТАОМ</p>
+                            <p><span class="bold-text">квалификация:</span> Бакалавр техники и технологии</p>
+                            <p class="bold-text">Количество мест:</p>
                             <ul>
                                 <li>бюджетных - 18 мест</li>
                                 <li>платных - 15 мест</li>
                             </ul>
                         </div>
                         <div>
-                            <p>Какие предметы сдавать:</p>
+                            <p class="bold-text">Какие предметы сдавать:</p>
                             <ul>
                                 <li>Математика</li>
                                 <li>Физика или Информатика и ИКТ</li>
@@ -291,21 +328,21 @@
                     </table>
                 </article>
 
-                <article>
-                    <h3>Двигатели летательных аппаратов</h3>
+                <article class="directions__card">
+                    <h3 class="card__title">Двигатели летательных аппаратов</h3>
                     <p>24.03.05</p>
-                    <div>
+                    <div class="directions__inf">
                         <div>
-                            <p>кафедра: ТПАД</p>
-                            <p>квалификация: Бакалавр техники и технологии</p>
-                            <p>Количество мест:</p>
+                            <p><span class="bold-text">кафедра:</span> ТПАД</p>
+                            <p><span class="bold-text">квалификация:</span> Бакалавр техники и технологии</p>
+                            <p class="bold-text">Количество мест:</p>
                             <ul>
                                 <li>бюджетных - 23 мест</li>
                                 <li>платных - 35 мест</li>
                             </ul>
                         </div>
                         <div>
-                            <p>Какие предметы сдавать:</p>
+                            <p class="bold-text">Какие предметы сдавать:</p>
                             <ul>
                                 <li>Математика</li>
                                 <li>Физика или Информатика и ИКТ</li>
@@ -332,20 +369,20 @@
                     </table>
                 </article>
 
-                <article>
-                    <h3>Менеджмент</h3>
+                <article class="directions__card">
+                    <h3 class="card__title">Менеджмент</h3>
                     <p>38.03.02</p>
-                    <div>
+                    <div class="directions__inf">
                         <div>
-                            <p>кафедра: ЭиУ</p>
-                            <p>квалификация: Бакалавр техники и технологии</p>
-                            <p>Количество мест:</p>
+                            <p><span class="bold-text">кафедра:</span> ЭиУ</p>
+                            <p><span class="bold-text">квалификация:</span> Бакалавр техники и технологии</p>
+                            <p class="bold-text">Количество мест:</p>
                             <ul>
                                 <li>платных - 60 мест</li>
                             </ul>
                         </div>
                         <div>
-                            <p>Какие предметы сдавать:</p>
+                            <p class="bold-text">Какие предметы сдавать:</p>
                             <ul>
                                 <li>Математика</li>
                                 <li>Обществознание или Информатика и ИКТ</li>
@@ -376,59 +413,69 @@
 
         <section class="contacts">
             <h2 class="section-title__dark">Контакты</h2>
-            <div>
+            <div class="contacts__block">
                 <picture>
                     <source srcset="/assets/img/contacts_img.avif">
                     <source srcset="/assets/img/contacts_img.webp">
-                    <img src="/assets/img/contacts_img.jpg" alt="здание сф маи">
+                    <img class="contacts__img" src="/assets/img/contacts_img.jpg" alt="здание сф маи">
                 </picture>
-                <div>
-                    <p>Адрес: 142800, Московская область, г. Ступино, ул. Пристанционная, д. 4., ауд.203</p>
-                    <p>sf-mai@mai.ru</p>
+                <div class="contacts__card">
                     <div>
-                        <p>Консультации по вопросам поступления с 10:00 до 17:00 по тел.:</p>
-                        <ul>
-                            <li>+7 (496) 641-16-30</li>
-                            <li>+7 (916) 326-34-35</li>
-                            <li>+7 (496) 644-11-60</li>
-                        </ul>
+                        <p><span class="bold-text">Адрес:</span> 142800, Московская область, г. Ступино, ул.
+                            Пристанционная, д. 4., ауд.203</p>
+                        <p>sf-mai@mai.ru</p>
+                        <div>
+                            <p class="bold-text">Консультации по вопросам поступления с 10:00 до 17:00 по тел.:</p>
+                            <ul>
+                                <li>+7 (496) 641-16-30</li>
+                                <li>+7 (916) 326-34-35</li>
+                                <li>+7 (496) 644-11-60</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="bold-text">Консультации по вопросам перевода (восстановления) с 11:00 до 17:00 по
+                                тел.:</p>
+                            <ul>
+                                <li>8(496)641-10-92</li>
+                                <li>8(917)556-82-58</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div>
-                        <p>Консультации по вопросам перевода (восстановления) с 11:00 до 17:00 по тел.:</p>
-                        <ul>
-                            <li>8(496)641-10-92</li>
-                            <li>8(917)556-82-58</li>
-                        </ul>
-                    </div>
-                    <a href="tel:+7 (496) 641-16-30">Задать вопрос</a>
+                    <a class="contacts__btn" href="tel:+7 (496) 641-16-30">Задать вопрос</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <nav>
-            <li><a href="#">Порядок поступления</a></li>
-            <li><a href="#">Минимальные баллы</a></li>
-            <li><a href="#">Проходные баллы 2023</a></li>
-            <li><a href="#">Пакет документов</a></li>
-            <li><a href="#">Направления подготовки</a></li>
-            <li><a href="#">Контакты</a></li>
-            <li><a href="https://sfmai.ru/">Подробнее</a></li>
-        </nav>
-        <div>
-            <div>
-                <img src="/assets/img/logo2.svg" alt="лого" width="276" height="100">
-                <div>
-                    <a href="https://vk.com/sf_mai"><img src="/assets/img/vk.svg" alt="группа вк" width="60"
-                            height="60"></a>
-                    <a href="https://sfmai.ru/"><img src="/assets/img/logo.svg" alt="сайт сф маи" width="61"
-                            height="60"></a>
+    <footer class="footer">
+        <section class="footer__menu">
+            <nav class="menu">
+                <li class="menu__point"><a href="#">Порядок поступления</a></li>
+                <li class="menu__point"><a href="#">Минимальные баллы</a></li>
+                <li class="menu__point"><a href="#">Проходные баллы 2023</a></li>
+                <li class="menu__point"><a href="#">Пакет документов</a></li>
+                <li class="menu__point"><a href="#">Направления подготовки</a></li>
+                <li class="menu__point"><a href="#">Контакты</a></li>
+                <li class="menu__point"><a href="https://sfmai.ru/">Подробнее</a></li>
+            </nav>
+        </section>
+        <section class="footer__block">
+            <div class="block__row">
+                <div class="block__main">
+                    <img src="/assets/img/logo2.svg" alt="лого" width="276" height="100">
+                    <ul class="block__links">
+                        <li><a href="https://vk.com/sf_mai"><img src="/assets/img/vk.svg" alt="группа вк" width="40"
+                                    height="40"></a></li>
+                        <li><a href="https://sfmai.ru/"><img src="/assets/img/logo.svg" alt="сайт сф маи" width="40"
+                                    height=450"></a></li>
+                    </ul>
                 </div>
+                <p class="block__text">© 2022. Ступинский филиал МАИ. Все права защищены.</p>
             </div>
-            <p>© 2022. Ступинский филиал МАИ. Все права защищены.</p>
-        </div>
+        </section>
     </footer>
+
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,98 @@
+.mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.button {
+  inline-size: 100%;
+  //   padding: 0.5lh 1.5lh;
+  //   font: inherit;
+  //   color: currentColor;
+  //   background-color: #f28482;
+  border: none;
+  cursor: pointer;
+
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 40px;
+  height: 40px;
+  //   border: 1px solid var(--text-color-light);
+  background: transparent;
+  //   padding: 5px;
+  //   border-radius: 8px;
+}
+
+.button:hover,
+.button:focus-visible {
+  //   background-color: #f5cac3;
+}
+
+.mobile__menu {
+  position: relative;
+  display: grid;
+  margin-block-start: 0.5lh;
+  //   background-color: #f28482;
+
+  overflow: hidden;
+  line-height: 0%;
+  color: transparent;
+  transition: line-height 0.5s, color 0.5s;
+}
+
+.menu-item {
+  overflow: hidden;
+}
+
+.menu-link {
+  display: block;
+  padding: 0.5lh 80px;
+
+  font-family: "Roboto Regular";
+  font-size: 1rem;
+  //   line-height: 150%;
+  color: var(--text-color-light);
+  text-transform: uppercase;
+}
+
+.menu-link:hover,
+.menu-link:focus-visible {
+  //   background-color: #f5cac3;
+}
+
+.button.active ~ .mobile__menu {
+  line-height: 150%;
+  color: currentColor;
+}
+
+// кнопка
+
+.btn__hamb {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: var(--text-color-light);
+  cursor: pointer;
+  div {
+    width: 100%;
+    height: 100%;
+  }
+  &:before,
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: var(--text-color-light);
+  }
+  &:before {
+    top: -8px;
+  }
+  &:after {
+    top: 8px;
+  }
+}

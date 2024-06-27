@@ -1,3 +1,5 @@
 @import "normalize", "fonts", "variables", "globals", "mixins";
 
-@import "blocks/header", "blocks/steps", "blocks/exams", "blocks/last-scores";
+@import "blocks/header", "blocks/steps", "blocks/exams", "blocks/last-scores", "blocks/documents", "blocks/directions", "blocks/contacts", "blocks/footer";
+
+@import "mobile";

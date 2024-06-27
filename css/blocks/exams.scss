@@ -5,13 +5,18 @@
         display: flex;
         justify-content: space-around;
         margin-top: 95px;
+
+        @media(max-width: 480px){
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
     }
 }
 
 .exam__card{
-    background-color: var(--bg-color-light);
+    background-color: var(--table-bg-color);
     border-radius: 20px;
-    box-shadow: 5px 5px 16px rgba(1, 14, 20, 0.2);
 
     padding: 25px;
     max-width: 240px;
@@ -21,6 +26,14 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+
+    @media(max-width: 480px){
+        margin: 0;
+        padding: 30px;
+        &:not(:first-child){
+            margin-top: 30px;
+        }
+    }
 
     &:first-child{
         margin-left: 0;
@@ -32,13 +45,32 @@
     &__title{
         font-size: 1.25rem;
         margin: 23px 0;
+
+        @media(max-width: 480px){
+            font-size: 1.05rem;
+            margin: 30px 0;
+        }
     }
 
     &__text{
         font-size: 1.25rem;
+        margin: 0;
+
+        @media(max-width: 480px){
+            // font-size: 1rem;
+        }
         span{
             font-size: 1.5rem;
+            
+            @media(max-width: 480px){
+                // font-size: 1.25rem;
+            }
         }
 
+    }
+    &__img{
+        @media(max-width: 480px){
+            max-width: 80px;
+        }
     }
 }
