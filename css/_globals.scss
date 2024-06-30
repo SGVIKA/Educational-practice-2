@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1rem;
+  overflow-x: hidden;
+  @media(max-width: 480px){
+    font-size: 0.8rem;
+  }
+}
+
+body {
+  font-family: "Roboto Light";
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header,
+section:not(footer section){
+  display: flex;
+  flex-direction: column;
+  padding: 95px 76px;
+  
+  @media(max-width: 480px){
+    padding: 50px;
+  }
+}
+
+.section-title {
+  &__light {
+    font-family: "Roboto Bold";
+    font-size: 3rem;
+    color: var(--text-color-light);
+    text-align: center;
+    text-transform: uppercase;
+
+    margin: 0;
+
+    @media(max-width: 480px){
+      font-size: 1.5rem;
+    }
+  }
+
+  &__dark {
+    font-family: "Roboto Bold";
+    font-size: 3rem;
+    color: var(--bg-color-dark);
+    text-align: center;
+    text-transform: uppercase;
+
+    margin: 0;
+
+    @media(max-width: 480px){
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.card__title {
+  font-family: "Roboto Medium";
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+
+table {
+  border-spacing: 0;
+  background-color: var(--bg-color-light);
+}
+
+tr {
+  &:first-child {
+    background-color: var(--bg-color-dark);
+  }
+}
+
+th {
+  font-family: "Roboto Medium";
+  font-weight: 500;
+  color: var(--text-color-light);
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+
+  @media(max-width: 480px){
+    letter-spacing: 0.8px;
+    
+  }
+}
+
+td {
+  font-family: "Roboto Regular";
+  color: var(--text-color-dark);
+}
+
+th,
+td {
+  text-align: start;
+  padding: 15px 25px;
+  &:not(:first-child) {
+    text-align: center;
+  }
+  @media(max-width: 480px){
+    padding: 15px 15px;
+    font-size: 0.8rem;
+  }
+}
+
+.marker {
+  position: relative;
+  &::before {
+    content: " ";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    position: absolute;
+    left: -25px;
+    top: 8px;
+
+    @media(max-width: 480px){
+      width: 5px;
+      height: 5px;
+      top: 10px;
+    }
+  }
+}
+
+.bold-text{
+  font-family: 'Roboto Regular';
+}

@@ -1,5 +1,7 @@
+// Общие для всего проекта файлы стилей.
 @import "normalize", "fonts", "variables", "globals", "mixins";
-
-@import "blocks/header", "blocks/steps", "blocks/exams", "blocks/last-scores", "blocks/documents", "blocks/directions", "blocks/contacts", "blocks/footer";
-
+// Файлы стилей каждой секции.
+@import "blocks/header", "blocks/steps", "blocks/exams", "blocks/last-scores",
+  "blocks/documents", "blocks/directions", "blocks/contacts", "blocks/footer";
+// Файл стилей для элементов, видимых только на мобильных устройствах.
 @import "mobile";
